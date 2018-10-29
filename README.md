@@ -1,4 +1,4 @@
-# Coming soon: PhD Comics downloader
+# PhD Comics downloader
 
 Being a PhD student myself, PhD Comics is a part of my everyday life. It gives
 me confidence in times of doubt and it often reminds me how important my small
@@ -7,9 +7,13 @@ me confidence in times of doubt and it often reminds me how important my small
 So, do check out [http://phdcomics.com](http://phdcomics.com)
 
 This repository contains a Python 3 script which aims at the bulk download of
-the comic strips. It has only been tested successfully on Linux systems, as it
-has been developed on one of them. So, Windows users out there, if you find a
-way to make it work, just create an issue here and tell us how to make it work.
+the comic strips. For those who are familiar with PhD Comics, writing this
+Python script was a great pleasure as it was a very enjoyable way to
+procrastinate.
+
+The script has only been tested successfully on Linux systems, as it has been
+developed on one of them. So, Windows users out there, if you find a way to
+make it work, just create an issue here and tell us how to make it work.
 
 
 
@@ -55,46 +59,68 @@ There's a small space in front of every date and it is left as is for easier
 bulk copying. A PhDComics_dates_titles.txt file is already found in the repo
 and I will try to keep it up-to-date.
 
-The script also needs a start index and end index. *All* the comics strips do not necessarily have
-to be downloaded at once. The script needs to be edited and the variables
-**startIdx** and **endIdx** initialised. The script will download the comic strips corresponding to the range **startIdx** -- **endIdx** inclusively. A small trick to know which
-comics you need to download is to look at their addresses. The index is the
-number at the end.
-e.g. http://phdcomics.com/comics/archive.php?comicid=1124
+The script also needs a start index and end index. *All* the comics strips do
+not necessarily have to be downloaded at once. The script will download the
+comic strips corresponding to the range **startIdx** -- **endIdx** inclusively.
+The script needs to be edited and the variables **startIdx** and **endIdx**
+initialised. A small trick to know which comics you need to download is to look
+at their addresses. The index is the number at the end, just after the equal
+sign.  e.g.  http://phdcomics.com/comics/archive.php?comicid=1124
 
 When everything is set, the script is just executed:
 ```
 $ ./PhDComics_download_v2.x.py
-OR
+  if the script is executable, OR:
 $ python3 PhDComics_download_v2.x.py
 ```
 
-One very useful feature of the script is that it will write a log report about the whole process. The log file is named **comic_[startIdx]_[endIdx].log**. It will contain messages about every issue encountered while trying to download the comic strips. There will be issues because some of the comic strips are not actually strips, but links, audio or video. Then, you'll have to manually download the media, if you wish. In cases where the script has not been able to download an *image*, it will create an empty file with the correct name, without any extension (.gif, .png, ...). This is very useful, especially on Linux, where the missing files can be visually observed when the output of *ls* is coloured. Also, in a Bash terminal, the downloaded media can be easily renamed (*mv*) using the name of the empty file.
+One very useful feature of the script is that it will write a log report about
+the whole process. The log file is named **Comics_[startIdx]_-_[endIdx].log**. It
+will contain messages about every issue encountered while trying to download
+the comic strips. There will be issues because some of the comic strips are not
+actually strips, but links, audio or video. Then, you'll have to manually
+download the media, if you wish. In cases where the script has not been able to
+download an *image*, it will create an empty file with the correct name,
+without any extension (.gif, .png, ...). This is very useful, especially on
+Linux, where the missing files can be visually seen when the output of *ls*
+is coloured. Also, in a Bash terminal, the downloaded media can be easily
+renamed (*mv*) using the name of the empty file.
 
 
 
 ## Anomalies
 
-As mentioned above, there are comic strips which are more than simple gif images. In these cases the script will run in trouble. A message will be written in the log for each one of these. In some cases, an image found at the target address can still be downloaded, but it will probably be some small banner. So, to make sure you got the right medium downloaded, please check using the log file.
+As mentioned above, there are comic strips which are more than simple gif
+images. In these cases the script will run in trouble, so we call them
+anomalies. A message will be written in the log for each one of these. In some
+cases, an image found at the target address can still be downloaded, but it
+will probably be some small banner. So, to make sure you got the right medium
+downloaded, please check using the log file.
 
-During tests, comic strips with the following indices have been found to pose problems:</br>
-[ Normal font: video or audio; Bold: links or other stuff]
+During tests, comic strips with the following indices have been found to pose
+problems:</br>
+[ Normal font: video or audio; Bold: links or other stuff ]
 
-191, 194, **574**, **657**, 1433, 1489, 1513, 1519, 1522, 1524, 1526, 1529, 1533, 1535, 1538, 1542, 1547, 1549, 1552, 1556, 1560, 1565, 1567, 1575, 1579, 1582, 1584, 1588, 1594, 1599, 1605, 1616, 1622, 1628, 1635, 1639, 1643, 1649, 1657, 1663, 1669, 1680, 1683, 1685, 1691, 1694, 1707, **1714**, 1716, **1718**, 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864, 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**, **1954**, **1959**, 1964, **1985**, **2009**, 2025
-</br>
-</br>
+191, 194, **574**, **657**, 1433, 1489, 1513, 1519, 1522, 1524, 1526, 1529,
+1533, 1535, 1538, 1542, 1547, 1549, 1552, 1556, 1560, 1565, 1567, 1575, 1579,
+1582, 1584, 1588, 1594, 1599, 1605, 1616, 1622, 1628, 1635, 1639, 1643, 1649,
+1657, 1663, 1669, 1680, 1683, 1685, 1691, 1694, 1707, **1714**, 1716, **1718**,
+1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
+1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
+**1954**, **1959**, 1964, **1985**, **2009**, 2025
+</br> </br>
 
 **Notes about some of the anomalies:** </br>
 1718: Turing test awaiting input from user, </br>
-1805: doodles for all the people who donated to kickstart the sequel to the PhD Movie, </br>
-1933: the comic on this page cycles randomly through 3 different images every time the page is loaded, </br>
-1949: contains a few pages of the book "We Have No Idea" plus audio and a link. </br>
+1805: doodles for all the people who donated to kickstart the sequel to the PhD
+Movie, </br>
+1933: the comic on this page cycles randomly through 3 different images every
+time the page is loaded, </br>
+1949: contains a few pages of the book "We Have No Idea" plus audio and a link.
 </br>
 
 **1168:** this is not an anomaly, but I would like to mention that this page contains a link to obtain a full size desktop wallpaper in terms of a comic signed by Jorge Cham.
 
+</br>
 
-**to be continued ...**
-
-
-
+### Enjoy the PhD world!
