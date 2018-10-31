@@ -1,10 +1,11 @@
-# PhD Comics downloader
+# PhD Comics downloader (Piled Higher and Deeper)
 
 Being a PhD student myself, PhD Comics is a part of my everyday life. It gives
 me confidence in times of doubt and it often reminds me how important my small
 "steps" are for research and science in general.
 
-So, do check out [http://phdcomics.com](http://phdcomics.com)
+So thanks for Jorge Cham (the author), and please check out
+[http://phdcomics.com](http://phdcomics.com)
 
 This repository contains a Python 3 script which aims at the bulk download of
 the comic strips. For those who are familiar with PhD Comics, writing this
@@ -123,4 +124,4 @@ time the page is loaded, </br>
 
 </br>
 
-### Enjoy the PhD world!
+### Enjoy the PhD universe!
