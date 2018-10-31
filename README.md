@@ -4,7 +4,7 @@ Being a PhD student myself, PhD Comics is a part of my everyday life. It gives
 me confidence in times of doubt and it often reminds me how important my small
 "steps" are for research and science in general.
 
-So thanks for Jorge Cham (the author), and please check out
+So many thanks to Jorge Cham (the author), and please check out
 [http://phdcomics.com](http://phdcomics.com)
 
 This repository contains a Python 3 script which aims at the bulk download of
