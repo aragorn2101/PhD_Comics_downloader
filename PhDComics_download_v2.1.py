@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 #  Script to download comic strips from PhD <http://phdcomics.com/>
-#  Version 2.2 -- Implemented using requests
+#  Version 2.1 -- Implemented using requests
 #
 #  Copyright (C) 2018  Nitish Ragoomundun, Mauritius
 #
