@@ -125,7 +125,7 @@ contains a link to obtain a full size desktop wallpaper in terms of a comic
 signed by Jorge Cham.
 
 </br>
-** Note about date anomalies in "list of all comics" **
+**Note about date anomalies in "list of all comics":** </br>
 Comics 2032 and 2033 were released in 2019 whereas they are listed in the 2018
 section.
 
