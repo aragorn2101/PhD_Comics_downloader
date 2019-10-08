@@ -109,7 +109,7 @@ problems:</br>
 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
 **1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**
-</br> </br>
+</br></br>
 
 **Notes about some of the anomalies:** </br>
 1718: Turing test awaiting input from user, </br>
@@ -123,10 +123,10 @@ time the page is loaded, </br>
 **1168:** this is not an anomaly, but I would like to mention that this page
 contains a link to obtain a full size desktop wallpaper in terms of a comic
 signed by Jorge Cham.
+</br></br>
 
-</br>
 **Note about date anomalies in "list of all comics":** </br>
-Comics 2032 and 2033 were released in 2019 whereas they are listed in the 2018
+Comics 2032 and 2033 were released in 2019 while they are listed in the 2018
 section.
 
 </br>
