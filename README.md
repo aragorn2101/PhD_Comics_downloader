@@ -12,9 +12,9 @@ the comic strips. For those who are familiar with PhD Comics, writing this
 Python script was a great pleasure as it was a very enjoyable way to
 procrastinate.
 
-The script has only been tested successfully on Linux systems, as it has been
-developed on one of them. So, Windows users out there, if you find a way to
-make it work, just create an issue here and tell us how to make it work.
+The script has only been tested successfully on Linux distributions, as it has
+been developed on one of them. So, Windows users out there, if you find a way
+to make it work, just create an issue here and tell us how to make it work.
 
 
 
@@ -94,13 +94,13 @@ renamed (*mv*) using the name of the empty file.
 As mentioned above, there are comic strips which are more than simple gif
 images. In these cases the script will run in trouble, so we call them
 anomalies. A message will be written in the log for each one of these. In some
-cases, an image found at the target address can still be downloaded, but it
-will probably be some small banner. So, to make sure you got the right medium
-downloaded, please check using the log file.
+cases, an image found at the target address can still be downloaded
+__manually__. So, to make sure you got the right medium downloaded, please
+check using the log file.
 
 During tests, comic strips with the following indices have been found to pose
 problems:</br>
-[ Normal font: video or audio; Bold: links or other stuff ]
+[ Normal font: video or audio; **Bold**: links or other stuff ]
 
 191, 194, **574**, **657**, 1433, 1489, 1513, 1519, 1522, 1524, 1526, 1529,
 1533, 1535, 1538, 1542, 1547, 1549, 1552, 1556, 1560, 1565, 1567, 1575, 1579,
@@ -108,7 +108,7 @@ problems:</br>
 1657, 1663, 1669, 1680, 1683, 1685, 1691, 1694, 1707, **1714**, 1716, **1718**,
 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
-**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**
+**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**
 </br></br>
 
 **Notes about some of the anomalies:** </br>
