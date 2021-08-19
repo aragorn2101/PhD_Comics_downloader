@@ -40,8 +40,8 @@ from pathlib import Path
 
 #  Range of indices of the comic strips which have to be
 #  downloaded.
-startIdx = 2033
-endIdx   = 2033
+startIdx = 2042
+endIdx   = 2042
 
 #  Base link of all the PhD Comics pages
 BaseUrl = "http://phdcomics.com/comics/archive.php?comicid="
@@ -63,7 +63,7 @@ anomalies = [  191,  194,  574,  657, 1433, 1489, 1513, 1519, 1522, 1524,
               1669, 1680, 1683, 1685, 1691, 1694, 1707, 1714, 1716, 1718,
               1726, 1748, 1766, 1769, 1770, 1777, 1788, 1805, 1845, 1853,
               1855, 1864, 1874, 1880, 1886, 1889, 1902, 1931, 1933, 1935,
-              1939, 1949, 1954, 1959, 1964, 1985, 2009, 2025, 2033]
+              1939, 1949, 1954, 1959, 1964, 1985, 2009, 2025, 2033, 2041]
 
 
 ###  END Preliminary setup  ###
