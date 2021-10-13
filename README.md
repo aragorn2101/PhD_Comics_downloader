@@ -108,7 +108,8 @@ problems:</br>
 1657, 1663, 1669, 1680, 1683, 1685, 1691, 1694, 1707, **1714**, 1716, **1718**,
 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
-**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**
+**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**,
+**2047**
 </br></br>
 
 **Notes about some of the anomalies:** </br>
@@ -123,6 +124,11 @@ time the page is loaded, </br>
 **1168:** this is not an anomaly, but I would like to mention that this page
 contains a link to obtain a full size desktop wallpaper in terms of a comic
 signed by Jorge Cham.
+
+**2047:** the page contains not just one but a series of comics explaining the
+SARS-CoV-2 (COVID-19) virus. Translations in several different languages are
+available. The technical issue in downloading the comic strip arises due to the
+fact that the series of comics actually consists of many separate JPG images.
 </br></br>
 
 **Note about date discrepancies in "list of all comics":** </br>
