@@ -113,12 +113,12 @@ problems:</br>
 </br></br>
 
 **Notes about some of the anomalies:** </br>
-*1718*: Turing test awaiting input from user, </br>
-*1805*: doodles for all the people who donated to kickstart the sequel to the PhD
+*1718:* Turing test awaiting input from user, </br>
+*1805:* doodles for all the people who donated to kickstart the sequel to the PhD
 Movie, </br>
-*1933*: the comic on this page cycles randomly through 3 different images every
+*1933:* the comic on this page cycles randomly through 3 different images every
 time the page is loaded, </br>
-*1949*: contains a few pages of the book "We Have No Idea" plus audio and a link.
+*1949:* contains a few pages of the book "We Have No Idea" plus audio and a link.
 </br>
 
 *1168:* this is not an anomaly, but I would like to mention that this page
