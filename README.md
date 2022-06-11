@@ -76,16 +76,16 @@ $ python3 PhDComics_download_v2.x.py
 ```
 
 One very useful feature of the script is that it will write a log report about
-the whole process. The log file is named **Comics_[startIdx]_-_[endIdx].log**. It
-will contain messages about every issue encountered while trying to download
+the whole process. The log file is named **Comics_[startIdx]_-_[endIdx].log**.
+It will contain messages about every issue encountered while trying to download
 the comic strips. There will be issues because some of the comic strips are not
 actually strips, but links, audio or video. Then, you'll have to manually
 download the media, if you wish. In cases where the script has not been able to
 download an *image*, it will create an empty file with the correct name,
 without any extension (.gif, .png, ...). This is very useful, especially on
-Linux, where the missing files can be visually seen when the output of *ls*
-is coloured. Also, in a Bash terminal, the downloaded media can be easily
-renamed (*mv*) using the name of the empty file.
+Linux, where the missing files can be visually seen when the output of the *ls*
+command is coloured. Also, in a Bash terminal, the downloaded media can be
+easily renamed (*mv*) using the name of the empty file.
 
 
 
@@ -113,19 +113,19 @@ problems:</br>
 </br></br>
 
 **Notes about some of the anomalies:** </br>
-1718: Turing test awaiting input from user, </br>
-1805: doodles for all the people who donated to kickstart the sequel to the PhD
+*1718*: Turing test awaiting input from user, </br>
+*1805*: doodles for all the people who donated to kickstart the sequel to the PhD
 Movie, </br>
-1933: the comic on this page cycles randomly through 3 different images every
+*1933*: the comic on this page cycles randomly through 3 different images every
 time the page is loaded, </br>
-1949: contains a few pages of the book "We Have No Idea" plus audio and a link.
+*1949*: contains a few pages of the book "We Have No Idea" plus audio and a link.
 </br>
 
-**1168:** this is not an anomaly, but I would like to mention that this page
+*1168:* this is not an anomaly, but I would like to mention that this page
 contains a link to obtain a full size desktop wallpaper in terms of a comic
 signed by Jorge Cham.
 
-**2047:** the page contains not just one but a series of comics explaining the
+*2047:* the page contains not just one but a series of comics explaining the
 SARS-CoV-2 (COVID-19) virus. Translations in several different languages are
 available. The technical issue in downloading the comic strip arises due to the
 fact that the series of comics actually consists of many separate JPG images.
