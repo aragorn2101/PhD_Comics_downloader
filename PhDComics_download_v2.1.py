@@ -40,8 +40,8 @@ from pathlib import Path
 
 #  Range of indices of the comic strips which have to be
 #  downloaded.
-startIdx = 2042
-endIdx   = 2042
+startIdx = 2046
+endIdx   = 2049
 
 #  Base link of all the PhD Comics pages
 BaseUrl = "http://phdcomics.com/comics/archive.php?comicid="
@@ -103,7 +103,7 @@ try:
     f = open(TitlesFile, 'r')
 except OSError:
     print("Cannot open {:s} !\n".format(TitlesFile))
-    exit(2)
+    exit(1)
 
 #  Loading dates and titles into arrays
 date_list = []
@@ -117,35 +117,24 @@ for row in csv.reader(f, delimiter="\t"):
 
 f.close()
 
-
-#  Verify if indices of comic strips are within valid ranges
+#  Verify if indices of comic strips are within valid ranges,
+#  also with regards to the list of dates and titles.
 try:
     if startIdx<=0 or endIdx<=0 or endIdx<startIdx:
         raise ValueError
-except ValueError:
-    print("startIdx = {:4d} and endIdx = {:4d} are not allowed.".format(startIdx, endIdx))
-    exit(1)
-
-
-
-#  Verifying if the number of dates and titles available are plausibly
-#  numerous enough to name the number of comic strips to download
-try:
-    if len(date_list) < (endIdx - startIdx + 1):
+    if len(date_list) < endIdx:
+        print("There are not enough entries in {:s} to satisfy the requested Comic indices.".format(TitlesFile))
         raise ValueError
 except ValueError:
-    print("There are {:d} items in the dates and titles list,".format(len(date_list)))
-    print("while there are {:d} comic strips to fetch (indices {:d} to {:d}).".format(endIdx-startIdx+1, startIdx, endIdx))
-    exit(1)
-
-
+    print("startIdx = {:4d} and endIdx = {:4d} not allowed.".format(startIdx, endIdx))
+    exit(2)
 
 #  Creating log file
 try:
     f = open(LogFile, 'w')
 except OSError:
     print("Cannot create {:s} !\n".format(LogFile))
-    exit(2)
+    exit(3)
 
 
 
@@ -154,10 +143,11 @@ for ComicIdx in range(startIdx, endIdx+1):
 
     #  Veryfying if it is part of the anomaly group
     if ComicIdx in anomalies:
-        f.write("--  Anomaly #{:d}  --\n".format(ComicIdx))
-        print("--  Anomaly #{:d}  --".format(ComicIdx))
+        f.write("----------------------   Anomaly #{:4d}   ----------------------\n".format(ComicIdx))
+        print("----------------------   Anomaly #{:4d}   ----------------------".format(ComicIdx))
 
     print("Working on comic strip #{:d} ...".format(ComicIdx))
+
 
     ###  BEGIN Retrieving webpage  ###
     print("Retrieving page <{:s}> ...".format(BaseUrl + str(ComicIdx)))
@@ -187,7 +177,6 @@ for ComicIdx in range(startIdx, endIdx+1):
     htmlSplit = (htmlPage.text).split('\n')
 
     ###  END Retrieving webpage  ###
-
 
 
     #  Retrieve image link
@@ -239,13 +228,13 @@ for ComicIdx in range(startIdx, endIdx+1):
             f.write("Successfully retrieved <")
             f.write(ImageUrl)
             f.write(">\nunder the name {:s}.\n\n".format(ComicName))
+            f.write("---------------------------------------------------------------\n".format(ComicIdx))
+            print("---------------------------------------------------------------".format(ComicIdx))
         print()
-        continue
 
     else:
         print("Image url does not link to image. Creating empty file {:s}.".format(ComicName[:-4]))
         print("Logging this issue and moving to next comic strip ...")
-        print()
         f.write("Fail to complete work on comic strip #{:d}".format(ComicIdx))
         f.write(" ({:s}: {:s})\n".format(date_list[ComicIdx-1], title_list[ComicIdx-1]))
         f.write("Image url <")
@@ -258,7 +247,10 @@ for ComicIdx in range(startIdx, endIdx+1):
         # without the .gif extension
         Path("{:s}".format(ComicName[:-4])).touch()
 
-        continue
+        if ComicIdx in anomalies:
+            f.write("---------------------------------------------------------------\n".format(ComicIdx))
+            print("---------------------------------------------------------------".format(ComicIdx))
+        print()
 
     ###  END Retrieve image file  ###
 
