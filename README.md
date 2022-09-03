@@ -109,7 +109,7 @@ problems:</br>
 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
 **1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**,
-**2047**
+**2047**, **2050**.
 </br></br>
 
 **Notes about some of the anomalies:** </br>
@@ -129,6 +129,12 @@ signed by Jorge Cham.
 SARS-CoV-2 (COVID-19) virus. Translations in several different languages are
 available. The technical issue in downloading the comic strip arises due to the
 fact that the series of comics actually consists of many separate JPG images.
+
+*2050:* the comic strip is actually just a small part of a longer strip
+describing the Physics behind our Sun and the Parker Solar Probe. Thus, the
+version on the PhD comics webpage contains a link. The full comic is available
+at the Physics Magazine website
+([https://physics.aps.org/articles/v14/178](https://physics.aps.org/articles/v14/178)).
 </br></br>
 
 **Note about date discrepancies in "list of all comics":** </br>
