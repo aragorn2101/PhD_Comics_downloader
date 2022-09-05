@@ -40,7 +40,7 @@ from pathlib import Path
 #  Range of indices of the comic strips which have to be
 #  downloaded.
 startIdx = 1
-endIdx   = 2050
+endIdx   = 2051
 
 #  Base link of all the PhD Comics pages
 BaseUrl = "http://phdcomics.com/comics/archive.php?comicid="
