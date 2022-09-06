@@ -108,8 +108,8 @@ problems:</br>
 1657, 1663, 1669, 1680, 1683, 1685, 1691, 1694, 1707, **1714**, 1716, **1718**,
 1726, 1748, 1766, 1769, 1770, 1777, 1788, **1805**, 1845, 1853, 1855, 1864,
 1874, 1880, **1886**, 1889, **1902**, 1931, **1933**, **1935**, 1939, **1949**,
-**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**,
-**2047**, **2050**.
+**1954**, **1959**, 1964, **1985**, **2009**, 2025, **2033**, **2041**, 2047,
+**2050**, 2052.
 </br></br>
 
 **Notes about some of the anomalies:** </br>
@@ -135,6 +135,10 @@ describing the Physics behind our Sun and the Parker Solar Probe. Thus, the
 version on the PhD comics webpage contains a link. The full comic is available
 at the Physics Magazine website
 ([https://physics.aps.org/articles/v14/178](https://physics.aps.org/articles/v14/178)).
+
+*2052:* similar to comic strip no. 2047, it consists of several images
+describing features of the James Webb Telescope. Our script cannot download the
+comic strip automatically because it is not a single image.
 </br></br>
 
 **Note about date discrepancies in "list of all comics":** </br>
